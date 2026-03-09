@@ -13,6 +13,6 @@ app.get("/skills", (req,res) => {
 });
 
 
-app.listen(port, (err) => {
-    console.log("Server started on http://localhost:"+port);
-})
+app.listen(port, "0.0.0.0", () => {
+  console.log("Server started on port " + port);
+});
